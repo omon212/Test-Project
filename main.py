@@ -1,14 +1,13 @@
-import qrcode
-qr = qrcode.QRCode(
-    version=1,
-    error_correction=qrcode.constants.ERROR_CORRECT_L,
-    box_size=10,
-    border=5,
-)
-qr.add_data('https://www.instagram.com/rmkvlly/')
-qr.make(fit=True)
+from math import *
 
-img = qr.make_image(fill_color="black", back_color="white")
-type(img)
 
-img.save(f"test.png")
+def print_length_less_than_4(some_str):
+    if len(some_str) <= 4:
+        print(False)
+        print(len(some_str))
+    else:
+        print(True)
+        print(len(some_str))
+
+print_length_less_than_4("omonu")
+
